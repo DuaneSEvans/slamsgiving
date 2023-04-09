@@ -1,8 +1,8 @@
 export default function Home() {
   return (
-    <div className="text-center p-8">
-      <h1 className="text-6xl font-bold">SLAMSGIVING</h1>
-      <p className="mt-auto">Coming soon</p>
+    <div className="h-screen flex flex-col justify-between text-center p-12">
+      <h1 className="md:text-6xl text-4xl font-bold">SLAMSGIVING</h1>
+      <p>Coming soon</p>
     </div>
   );
 }
