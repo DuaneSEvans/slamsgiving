@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         <title>Slamsgiving</title>
       </Head>
-      <Component {...pageProps} />
+      <Component {...pageProps} styles={{ height: "100%" }} />
     </>
   );
 }
