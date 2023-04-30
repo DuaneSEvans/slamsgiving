@@ -16,7 +16,7 @@ function getTimeUntilSlams(): Duration {
   ]);
 }
 
-export default function CountDown() {
+export function CountDown() {
   const [timeRemaining, setTimeRemaining] = useState(getTimeUntilSlams());
 
   useEffect(() => {
@@ -29,11 +29,11 @@ export default function CountDown() {
   return (
     <>
       <div className="flex justify-center lg:gap-6 gap-4">
-        <CountDownBox value={timeRemaining.months} label="months" />{" "}
-        <CountDownBox value={timeRemaining.days} label="days" />{" "}
-        <CountDownBox value={timeRemaining.hours} label="hours" />{" "}
-        <CountDownBox value={timeRemaining.minutes} label="minutes" />{" "}
-        <CountDownBox value={timeRemaining.seconds} label="seconds" />{" "}
+        <CountDownBox value={timeRemaining.months} label="months" />
+        <CountDownBox value={timeRemaining.days} label="days" />
+        <CountDownBox value={timeRemaining.hours} label="hours" />
+        <CountDownBox value={timeRemaining.minutes} label="minutes" />
+        <CountDownBox value={timeRemaining.seconds} label="seconds" />
       </div>
       <article className="p-6">
         <p>{SLAMSGIVING_DATE.toFormat("MMMM dd, yyyy")}</p>

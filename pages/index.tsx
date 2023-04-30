@@ -1,4 +1,4 @@
-import CountDown from "../components/countdown";
+import { CountDown } from "../components/CountDown";
 
 export default function Home() {
   return (
