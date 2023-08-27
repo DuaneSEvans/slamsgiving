@@ -28,7 +28,7 @@ export function CountDown() {
 
   return (
     <>
-      <div className="flex justify-center lg:gap-6 md:gap-4">
+      <div className="flex justify-center lg:gap-6 md:gap-4 font-mono">
         <CountDownBox value={timeRemaining.months} label="months" />
         <CountDownBox value={timeRemaining.days} label="days" />
         <CountDownBox value={timeRemaining.hours} label="hours" />
