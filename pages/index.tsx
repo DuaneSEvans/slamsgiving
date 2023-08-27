@@ -3,7 +3,7 @@ import { CountDown } from "../components/CountDown";
 
 export default function Home() {
   return (
-    <>
+    <div className="h-screen flex flex-col">
       <Nav />
       <div className="h-full flex flex-col justify-between text-center text-[#4F5400] py-12 md:px-12">
         <h1 className="md:text-6xl text-4xl font-bold uppercase">
@@ -11,6 +11,6 @@ export default function Home() {
         </h1>
         <CountDown />
       </div>
-    </>
+    </div>
   );
 }
