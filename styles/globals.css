@@ -12,8 +12,13 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-family: "SHREK", "Comic Sans MS", "Comic Sans", cursive;
   background-image: url("https://www.dennys.ca/wp-content/themes/mt-dennys/assets/dist/img/dennys_pattern_tile.png");
+}
+
+@font-face {
+  font-family: "SHREK";
+  src: url("SHREK___.TTF");
 }
 
 a {

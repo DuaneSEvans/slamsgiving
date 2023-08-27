@@ -37,7 +37,7 @@ export function CountDown() {
       </div>
       <article className="p-6">
         <p>{SLAMSGIVING_DATE.toFormat("MMMM dd, yyyy")}</p>
-        <p>{SLAMSGIVING_DATE.toFormat("h:mm a")}</p>
+        <p>{SLAMSGIVING_DATE.toFormat("h.mm a")}</p>
       </article>
     </>
   );
