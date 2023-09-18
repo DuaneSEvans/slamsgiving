@@ -41,7 +41,7 @@ export default function Team(): JSX.Element {
     },
     {
       name: "Eva",
-      imageUrl: "teamMembers/eva-licking-package.jpeg",
+      imageUrl: "teamMembers/eva-bike.jpeg",
       role: Roles.Decoration,
       description:
         "Eva, our Decorations Director, recently discovered the dance move 'floss', a testament to her adaptability and willingness to learn. Despite her late introduction to this viral dance, Eva's creativity and eye for aesthetics make her an exceptional decorations maestro.",
