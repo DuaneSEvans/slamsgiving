@@ -30,7 +30,7 @@ export default function Team(): JSX.Element {
       imageUrl: "teamMembers/daniel-astonished.jpeg",
       role: Roles.Communications,
       description:
-        "Danial, our Communications Director, not only excels in conveying messages effectively but also has a knack for providing fantastic massages. He's the go to person for easing tensions, both in the office and on aching shoulders. His skills extend beyond words, making him an invaluable asset to our team.",
+        "Daniel, our Communications Director, not only excels in conveying messages effectively but also has a knack for providing fantastic massages. He's the go to person for easing tensions, both in the office and on aching shoulders. His skills extend beyond words, making him an invaluable asset to our team.",
     },
     {
       name: "Rachel",
