@@ -19,7 +19,7 @@ type TeamMember = {
 export default function Team(): JSX.Element {
   const teamMembers: TeamMember[] = [
     {
-      name: 'Ryan "Morty"',
+      name: "Ryan 'Morty'",
       imageUrl: "teamMembers/ryan-shirt.jpeg",
       role: Roles.Finance,
       description:
