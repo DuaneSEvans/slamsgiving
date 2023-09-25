@@ -10,20 +10,20 @@ enum Roles {
   Activities = "Activities",
 }
 type TeamMember = {
-  name: string;
-  imageUrl: string;
-  role: Roles;
-  description: string;
-};
+  name: string
+  imageUrl: string
+  role: Roles
+  description: string
+}
 
 export default function Team(): JSX.Element {
   const teamMembers: TeamMember[] = [
     {
-      name: "Ryan",
+      name: 'Ryan "Morty"',
       imageUrl: "teamMembers/ryan-shirt.jpeg",
       role: Roles.Finance,
       description:
-        "Ryan, our Finance Director, is known for his financial acumen and quirky sense of humor. He's affectionately nicknamed 'Morty' due to his camping misadventures, struggling to build a tent. His financial prowess may rival his camping skills, but he's a crucial asset to our team.",
+        "As a Slamsgiving Founder, Ryan has always taken a keen interest in propagating the party, turned event, turned festival and was instrumental in reviving it after the pandemic. In the past, Ryan has volunteered as a social coordinator, food and beverage slamager, and even as a car. A long time ago we implanted a subdermal chip that can call upon dormant nanobots in his blood-stream to restructure certain parts of his anatomy to turn him into a car. And, thus so, he has extensive party planning and budgeting experience. Ryan is very excited that Slamsgiving has grown past the capacity of anyones apartment, and looks forward to the inevitable exponential growth of this, the holiest of hollandaise.",
     },
     {
       name: "Daniel",
@@ -37,7 +37,7 @@ export default function Team(): JSX.Element {
       imageUrl: "teamMembers/rachel-water.jpeg",
       role: Roles.Activities,
       description:
-        "Rachel, our vibrant Activities Director, is fondly called 'Lassy' for her lively spirit. She's the life of the party, always planning and organizing events that bring everyone together. Whether it's a social gathering or team-building activities, Rachel ensures a great time for all.",
+        "Marine biologist by day, chief activities officer by night - Rachel's knowledge of the cold, slippery, and wet lend herself well to both roles. Affectionately known as 'Fish Cop', you can always catch this fish copping the latest slamming trends!",
     },
     {
       name: "Eva",
@@ -74,7 +74,7 @@ export default function Team(): JSX.Element {
       description:
         "Duane, our Technologist, is the man with the plan and a helmet. Always wearing a helmet due to his run ins with trees, he ensures our technological endeavors are as well protected and innovative as his head. Duane's determination and resilience make him an indispensable tech genius for our team.",
     },
-  ];
+  ]
 
   return (
     <div className="flex justify-around flex-wrap">
@@ -107,8 +107,8 @@ export default function Team(): JSX.Element {
               <p>{teamMember.description}</p>
             </div>
           </article>
-        );
+        )
       })}
     </div>
-  );
+  )
 }
