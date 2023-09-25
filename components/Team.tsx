@@ -48,7 +48,7 @@ export default function Team(): JSX.Element {
     },
     {
       name: "Julian",
-      imageUrl: "teamMembers/julian-between-rocks.jpeg",
+      imageUrl: "teamMembers/julian-astro.jpeg",
       role: Roles.Music,
       description:
         "Julian, our Music Director, has a delightful Italian allure about him that captivates everyone. Despite not being Italian, his passion for music is unmistakably genuine. He orchestrates melodious tunes, harmonizing our team's efforts seamlessly.",
