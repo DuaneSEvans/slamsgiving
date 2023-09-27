@@ -20,7 +20,7 @@ export default function Team(): JSX.Element {
   const teamMembers: TeamMember[] = [
     {
       name: "Ryan 'Morty'",
-      imageUrl: "teamMembers/ryan-shirt.jpeg",
+      imageUrl: "teamMembers/ryan.jpeg",
       role: Roles.Finance,
       description:
         "As a Slamsgiving Founder, Ryan has always taken a keen interest in propagating the party, turned event, turned festival and was instrumental in reviving it after the pandemic. In the past, Ryan has volunteered as a social coordinator, food and beverage slamager, and even as a car. A long time ago we implanted a subdermal chip that can call upon dormant nanobots in his blood-stream to restructure certain parts of his anatomy to turn him into a car. And, thus so, he has extensive party planning and budgeting experience. Ryan is very excited that Slamsgiving has grown past the capacity of anyones apartment, and looks forward to the inevitable exponential growth of this, the holiest of hollandaise.",
