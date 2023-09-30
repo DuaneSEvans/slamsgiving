@@ -58,7 +58,7 @@ export default function Team(): JSX.Element {
       imageUrl: "teamMembers/jake.jpeg",
       role: Roles.Food,
       description:
-        "Jake, our Food Director, has an unparalleled fascination with rocks. He brings this same enthusiasm to the culinary world, where he garnishes dishes with creative flair. Just as rocks form a solid foundation, Jake's culinary skills form the bedrock of our team's gastronomic experience.",
+        "Jake MacDonald brings a wealth of experience to the role of Food Director for Slamsgiving 2023. He is a Rock Expert, a highly regarded lawyer, and the most photogenic guy around. His unique skill of knowing exactly how much water to mix with pancake powder on the first try will be invaluable to his success as Food Director this year, no matter how drunk he is or how many Santa beards he's wearing. Jake has travelled this vast country, visiting Denny's locations far and wide, and discovering the Slamtastic secrets they have to offer, and will pour all that knowledge directly into the food we eat at Slamsgiving 2023.",
     },
     {
       name: "Mika",
