@@ -30,7 +30,7 @@ export default function Team(): JSX.Element {
       imageUrl: "teamMembers/daniel-astonished.jpeg",
       role: Roles.Communications,
       description:
-        "Daniel, our Communications Director, not only excels in conveying messages effectively but also has a knack for providing fantastic massages. He's the go to person for easing tensions, both in the office and on aching shoulders. His skills extend beyond words, making him an invaluable asset to our team.",
+        "Daniel, our Communications Director, is not just a maestro of messages but a virtuoso on wheels, reminiscent of Shrek in his bold escapades. He fearlessly navigates the bicycle realm, attempting audacious jumps that often result in spectacular falls. Despite these mishaps and the occasional eating shit moment, his ability to effectively convey his experiences through stories and imagery is unmatched. Much like crafting a compelling narrative, he refines his jumps, learns from the falls, and communicates these lessons to his fellow biking enthusiasts, sharing a tale as grand as Shrek's adventures in the swamp. Daniel is the epitome of seamless communication, whether on the trails or within the team, where every fall is a chance to rise and share the adventure anew, just like our favorite ogre.",
     },
     {
       name: "Rachel",
