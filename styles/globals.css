@@ -29,3 +29,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.cursive-font {
+  font-family: cursive;
+}

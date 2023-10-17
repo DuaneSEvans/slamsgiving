@@ -1,7 +1,7 @@
-import { AppProps } from "next/app";
-import "../styles/globals.css";
-import Head from "next/head";
-import Nav from "components/Nav";
+import { AppProps } from "next/app"
+import "../styles/globals.css"
+import Head from "next/head"
+import Nav from "components/Nav"
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <Component {...pageProps} styles={{ height: "100%" }} />
       </div>
     </>
-  );
+  )
 }
 
-export default MyApp;
+export default MyApp

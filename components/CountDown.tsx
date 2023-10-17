@@ -1,9 +1,6 @@
-import { useEffect, useState } from "react";
-import { DateTime, Duration } from "luxon";
-
-const SLAMSGIVING_DATE = DateTime.local(2023, 11, 18, 16, 20, 0).setZone(
-  "America/Vancouver"
-);
+import { useEffect, useState } from "react"
+import { DateTime, Duration } from "luxon"
+import { SLAMSGIVING_DATE } from "lib/const"
 
 function getTimeUntilSlams(): Duration {
   return SLAMSGIVING_DATE.diff(DateTime.now(), [
@@ -13,42 +10,36 @@ function getTimeUntilSlams(): Duration {
     "minutes",
     "seconds",
     "milliseconds",
-  ]);
+  ])
 }
 
 export function CountDown() {
-  const [timeRemaining, setTimeRemaining] = useState(getTimeUntilSlams());
+  const [timeRemaining, setTimeRemaining] = useState(getTimeUntilSlams())
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setTimeRemaining(getTimeUntilSlams());
-    }, 1000);
-    return () => clearInterval(interval);
-  }, []);
+      setTimeRemaining(getTimeUntilSlams())
+    }, 1000)
+    return () => clearInterval(interval)
+  }, [])
 
   return (
-    <>
-      <div className="flex justify-center lg:gap-6 md:gap-4 font-mono">
-        <CountDownBox value={timeRemaining.months} label="months" />
-        <CountDownBox value={timeRemaining.days} label="days" />
-        <CountDownBox value={timeRemaining.hours} label="hours" />
-        <CountDownBox value={timeRemaining.minutes} label="minutes" />
-        <CountDownBox value={timeRemaining.seconds} label="seconds" />
-      </div>
-      <article className="p-6">
-        <p>{SLAMSGIVING_DATE.toFormat("MMMM dd, yyyy")}</p>
-        <p>{SLAMSGIVING_DATE.toFormat("h.mm a")}</p>
-      </article>
-    </>
-  );
+    <div className="flex justify-center lg:gap-6 md:gap-4 font-mono">
+      <CountDownBox value={timeRemaining.months} label="months" />
+      <CountDownBox value={timeRemaining.days} label="days" />
+      <CountDownBox value={timeRemaining.hours} label="hours" />
+      <CountDownBox value={timeRemaining.minutes} label="minutes" />
+      <CountDownBox value={timeRemaining.seconds} label="seconds" />
+    </div>
+  )
 }
 
 function CountDownBox({
   value,
   label,
 }: {
-  value: number;
-  label: string;
+  value: number
+  label: string
 }): JSX.Element {
   return (
     <div className="flex flex-col lg:p-5 p-2">
@@ -57,5 +48,5 @@ function CountDownBox({
       </span>
       <span>{label}</span>
     </div>
-  );
+  )
 }
