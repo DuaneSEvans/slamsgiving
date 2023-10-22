@@ -51,7 +51,7 @@ export default function Team(): JSX.Element {
       imageUrl: "teamMembers/julian-astro.jpeg",
       role: Roles.Music,
       description:
-        "Julian, our Music Director, has a delightful Italian allure about him that captivates everyone. Despite not being Italian, his passion for music is unmistakably genuine. He orchestrates melodious tunes, harmonizing our team's efforts seamlessly.",
+        "Julian has a secret, invisible, musical mustache that whispers the unknown mysteries of the musical multiverses. Thanks to this mustache, Julian knows the chord progressions of all songs in the universe. Even those not written yet. A little known fact about him is that his heart beats in time with whatever song is currently being played. So if the drummer speeds up by 1 BPM, our musical director will be the first one to know because he can feel it in his bones. Julian is a construction worker by day. It is often said that he can construct a bridge with just his hammer-ons and careful quotations of the Shrek Karaoke Dance Party. During his lunch breaks, Julian is often seen directing traffic with one of his 69 electric guitars. When Julian conducts traffic there is never a fender bender. Thanks to our lovely musical director, our hashbrowns will be singing, the pancakes will be dancing, the dance floor will be bumpin', and the swamp will be a rockin' all night long.",
     },
     {
       name: "Jake",
