@@ -1,4 +1,4 @@
-import Team from "components/Team";
+import Team from "components/Team"
 
 export default function AboutUs(): JSX.Element {
   return (
@@ -8,5 +8,5 @@ export default function AboutUs(): JSX.Element {
       </h1>
       <Team />
     </div>
-  );
+  )
 }
