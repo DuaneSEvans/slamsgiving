@@ -9,7 +9,7 @@ export default function History(): JSX.Element {
             History
           </h1>
           <article className="flex justify-center text-justify">
-            <p className="sm:text-lg lg:text-xl cursive-font">
+            <p className="text-lg lg:text-xl cursive-font">
               On May 12th, 2011, Dan Harmon’s hit sitcom “Community” aired their
               24th episode of Season 2, titled “For a Few Paintballs More”. For
               the first time, the phrase “Denny’s is for winners” was
