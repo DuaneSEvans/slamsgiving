@@ -8,7 +8,7 @@ export default function History(): JSX.Element {
           <h1 className="text-center text-2xl sm:text-4xl font-bold">
             History
           </h1>
-          <article className="flex justify-center">
+          <article className="flex justify-center text-justify">
             <p className="sm:text-lg lg:text-xl cursive-font">
               On May 12th, 2011, Dan Harmon’s hit sitcom “Community” aired their
               24th episode of Season 2, titled “For a Few Paintballs More”. For

@@ -82,7 +82,7 @@ export default function Team(): JSX.Element {
         return (
           <article
             key={teamMember.name}
-            className="max-w-[500px] mx-4 my-12 p-2 gap-10"
+            className="max-w-[500px] mx-4 my-12 p-2 gap-10 text-justify"
           >
             <div className="relative">
               <div className="max-h-[600px] overflow-y-clip grayscale">
