@@ -7,7 +7,7 @@ export default function Home() {
       <div className="flex flex-col gap-6">
         <h1 className="md:text-6xl text-4xl font-bold">Slamsgiving</h1>
         <article className="flex justify-center">
-          <p className="sm:w-2/3 md:text-lg lg:text-xl cursive-font font-bold">
+          <p className="sm:w-2/3 text-lg lg:text-xl cursive-font font-bold">
             Slamsgiving is a celebration of the greatest running joke of our
             generation. Simply, anything that slams belongs at Slamsgiving. A
             Denny’s Grand Slam? Check. Slamming drinks? Sign me up. Shrek Super
