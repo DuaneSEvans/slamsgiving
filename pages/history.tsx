@@ -1,5 +1,3 @@
-import Team from "components/Team"
-
 export default function History(): JSX.Element {
   return (
     <div className="w-full flex justify-center">
@@ -51,8 +49,8 @@ export default function History(): JSX.Element {
               2, played Shrek Super Slam and generally… got Slammed.
               <br />
               <br />
-              In 2022, a new venue was found to accommodate more friends. In
-              2023, it was relocated again to accommodate over 30 and for the
+              In 2021, a new venue was found to accommodate more friends. In
+              2022, it was relocated again to accommodate over 30 and for the
               first time the Slamsgiving meal was hosted in-person at Fancy
               Denny’s. Over the years, Slamsgiving has grown from a humble
               gathering to the slamming celebration we know and love today.
