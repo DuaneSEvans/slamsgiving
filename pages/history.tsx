@@ -1,7 +1,7 @@
 export default function History(): JSX.Element {
   return (
     <div className="w-full flex justify-center">
-      <div className="flex flex-col w-full sm:w-3/4 md:w-3/4 lg:w-2/3 items-center gap-16 h-full text-[#4F5400] py-12 px-2 md:px-12">
+      <div className="flex flex-col w-full sm:w-3/4 md:w-3/4 lg:w-2/3 items-center gap-16 h-full text-swamp py-12 px-2 md:px-12">
         <div className="flex flex-col gap-6">
           <h1 className="text-center text-2xl sm:text-4xl font-bold">
             History

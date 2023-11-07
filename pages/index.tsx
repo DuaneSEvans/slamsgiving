@@ -3,7 +3,7 @@ import { CountDown } from "../components/CountDown"
 
 export default function Home() {
   return (
-    <div className="h-full flex flex-col justify-between text-center text-[#4F5400] py-12 px-2 md:px-12">
+    <div className="h-full flex flex-col justify-between text-center text-swamp py-12 px-2 md:px-12">
       <div className="flex flex-col gap-6">
         <h1 className="md:text-6xl text-4xl font-bold">Slamsgiving</h1>
         <article className="flex justify-center">
