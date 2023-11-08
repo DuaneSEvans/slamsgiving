@@ -11,8 +11,6 @@ const jakeImageURLs = [
   "/teamMembers/jake-blur.jpeg",
   "/teamMembers/jake-cats.jpeg",
   "/teamMembers/jake-christmas.jpeg",
-  "/teamMembers/jake-eva-positions.jpeg",
-  "/teamMembers/jake-fell-down.jpeg",
   "/teamMembers/jake-golf.jpeg",
   "/teamMembers/jake-mario.jpeg",
   "/teamMembers/jake-shaving.jpeg",
