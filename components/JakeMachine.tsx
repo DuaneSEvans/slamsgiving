@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-import Image from "next/image"
 import { useState } from "react"
 
 const jakeImageURLs = [
@@ -41,14 +40,14 @@ export function JakeMachine(): JSX.Element {
   return (
     <div className="flex flex-col items-center text-center text-swamp md:py-12 py-6 gap-8">
       <h1 className="md:text-6xl text-4xl font-bold wrap">Jake Generator</h1>
-      <div className="flex flex-col md:max-h-full max-h-[500px] md:max-w-[500px] w-screen justify-between md:gap-6 gap-4 px-1">
+      <div className="flex flex-col sm:max-w-[400px] w-screen justify-between md:gap-6 gap-4 px-1">
         <button
           className="bg-swamp hover:bg-primary text-white hover:text-black font-bold py-2 px-4 rounded-full"
           onClick={() => setImageURL(choose(jakeImageURLs))}
         >
           Hit me
         </button>
-        <div className="overflow-y-clip grayscale">
+        <div className="overflow-y-clip max-h-[500px] grayscale jake-machine-image-wrapper">
           <img alt="A funny photo of jake" src={imageURL} width={"100%"} />
         </div>
       </div>
