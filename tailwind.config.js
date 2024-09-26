@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       colors: {
         primary: "#c4d300",
-        swamp: "#4F5400",
+        swamp: "#434700",
       },
     },
   },

@@ -1,5 +1,6 @@
 import { EventDate } from "components/EventData"
 import { CountDown } from "../components/CountDown"
+import { TicketButton } from "components/TicketButton"
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
           </p>
         </article>
       </div>
+      <TicketButton />
       <CountDown />
       <EventDate />
     </div>
