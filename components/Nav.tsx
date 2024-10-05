@@ -8,8 +8,8 @@ export default function Nav(): JSX.Element {
         <Image src="/shrek-head.svg" alt="Home" width="32" height="32" />
       </Link>
       <div className="flex gap-12">
-        <Link href="/history" className="flex items-center mr-1 text-swamp">
-          History
+        <Link href="/what" className="flex items-center mr-1 text-swamp">
+          What
         </Link>
         <Link href="/about-us" className="flex items-center mr-1 text-swamp">
           About us

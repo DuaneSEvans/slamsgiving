@@ -3,9 +3,22 @@ export default function History(): JSX.Element {
     <div className="w-full flex justify-center">
       <div className="flex flex-col w-full sm:w-3/4 md:w-3/4 lg:w-2/3 items-center gap-16 h-full text-swamp py-12 px-2 md:px-12">
         <div className="flex flex-col gap-6">
-          <h1 className="text-center text-2xl sm:text-4xl font-bold">
+          <h1 className="text-center text-2xl sm:text-4xl font-bold">What</h1>
+          <article className="flex justify-center text-justify">
+            <p className="text-lg lg:text-xl cursive-font">
+              Slamsgiving is more than an annual party. It is a celebration of
+              the greatest running joke of our generation. Simply, anything that
+              slams belongs at Slamsgiving. A Denny’s Grand Slam? Check.
+              Slamming drinks? Sign me up. Shrek Super Slam? A classic. Slam
+              poetry? Break a leg.
+              <br />
+              <br />
+              The question is, do YOU slam?
+            </p>
+          </article>
+          <h2 className="text-center text-2xl sm:text-4xl font-bold">
             History
-          </h1>
+          </h2>
           <article className="flex justify-center text-justify">
             <p className="text-lg lg:text-xl cursive-font">
               On May 12th, 2011, Dan Harmon’s hit sitcom “Community” aired their
