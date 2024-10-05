@@ -8,6 +8,7 @@ enum Roles {
   Food = "Food",
   Beverage = "Beverage",
   Activities = "Activities",
+  Begonias = "Begonias",
 }
 type TeamMember = {
   name: string
@@ -72,6 +73,13 @@ const teamMembers: TeamMember[] = [
     role: Roles.Tech,
     description:
       "Duane, our Technologist, is the man with the plan and a helmet. Always wearing a helmet due to his run ins with trees, he ensures our technological endeavors are as well protected and innovative as his head. Duane's determination and resilience make him an indispensable tech genius for our team.",
+  },
+  {
+    name: "Cameron",
+    imageUrl: "teamMembers/cameron.jpg",
+    role: Roles.Begonias,
+    description:
+      "Cameron, Director of Begonias, is a plant whisperer by day and mushroom forager by weekend. With an impeccable eye for begonias and a deep love for all things fungi, he is always cultivating something extraordinary. His most memorable adventure was a life-changing trip to the legendary 'Bone Town.' Whether nurturing a bloom or hunting for the perfect morel, Cameron keeps everything thriving in full swing.",
   },
 ]
 
