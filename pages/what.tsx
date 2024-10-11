@@ -67,6 +67,11 @@ export default function History(): JSX.Element {
               first time the Slamsgiving meal was hosted in-person at Fancy
               Denny’s. Over the years, Slamsgiving has grown from a humble
               gathering to the slamming celebration we know and love today.
+              <br />
+              <br />
+              In 2023, we rented our first venue and hosted over 100 slammers in
+              the basement of the Victoria Community Hall and for the first time
+              Denny and the Jets took to the stage (corner of the basement)
             </p>
           </article>
         </div>
