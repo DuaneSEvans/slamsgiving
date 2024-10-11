@@ -13,6 +13,7 @@ enum Roles {
   Activities = "Activities",
   Begonias = "Begonias",
   Photography = "Photography",
+  Swamp = "Swamp",
 }
 export type TeamMember = {
   name: string
@@ -94,5 +95,12 @@ export const officers: TeamMember[] = [
     role: Roles.Photography,
     description:
       "Emily, our Officer of Photography, is a master of light and shadow, capturing moments that tell stories as enchanting as Fiona's transformation under the moonlight. With a passion rivaling a dragon's love for treasure, Emily's camera turns every Denny's Grand Slam into a royal feast fit for a fairytale kingdom. Her lens lovingly caresses each pancake stack and sizzling bacon strip, transforming humble diner fare into works of art that would make even the most discerning ogre trade their swamp for a booth. While she occasionally photographs non Denny's subjects, Emily's true calling is immortalizing the beauty of a perfectly plated Moons Over My Hammy.",
+  },
+  {
+    name: "Sadie",
+    imageUrl: "teamMembers/sadie.jpeg",
+    role: Roles.Swamp,
+    description:
+      "Sadie, our esteemed Officer of the Swamp, is the guardian of all things funky and fun in our beloved bog. With a keen nose for the perfect swamp aroma and an eye for that just-right shade of murky green, Sadie ensures our swamp is always in top form. As the official greeter of the mire, she welcomes every guest with the warmth of decomposing vegetation and the charm of a friendly bog creature. Sadie's unique talent lies in maintaining the delicate balance between 'appropriately funky' and 'still habitable,' creating an atmosphere where fun thrives alongside the funk. Under her watchful eye, the swamp remains the beating heart of our Slamsgiving celebration, pulsing with life, laughter, and just the right amount of slime.",
   },
 ]
