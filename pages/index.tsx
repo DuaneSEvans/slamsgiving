@@ -13,7 +13,7 @@ export default function Home() {
           </p>
         </article>
       </div>
-      <TicketButton />
+      {/* <TicketButton /> */}
       <CountDown />
       <EventDate />
     </div>
