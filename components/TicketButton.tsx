@@ -1,4 +1,3 @@
-import { SLAMSGIVING_DATE } from "lib/const"
 import Link from "next/link"
 
 export function TicketButton(): JSX.Element {
