@@ -7,7 +7,7 @@ export default function Gallery(): JSX.Element {
           <h1 className="text-center font-['Chalkboard']">
             Photography by{" "}
             <a
-              href="https://robinrobinphotography.mypixieset.com/"
+              href="https://www.instagram.com/robinrobinphotography/"
               className="underline"
               target="_blank"
             >
