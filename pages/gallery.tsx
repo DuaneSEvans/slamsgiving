@@ -17,13 +17,13 @@ export default function Gallery(): JSX.Element {
           <br />
           <h1 className="text-center text-2xl sm:text-4xl font-bold">2024</h1>
           <article className="flex justify-center text-justify">
-            Still cooking 🍳
+            <Mosaic year="2024" length={108} />
           </article>
           <br />
           <br />
           <h1 className="text-center text-2xl sm:text-4xl font-bold">2023</h1>
           <article className="flex justify-center text-justify">
-            <Mosaic />
+            <Mosaic year="2023" length={76} />
           </article>
         </div>
       </div>
@@ -31,8 +31,14 @@ export default function Gallery(): JSX.Element {
   )
 }
 
-function Mosaic(): JSX.Element {
-  const images = Array.from({ length: 76 }, (_, i) => `2023/${i + 1}.jpg`)
+function Mosaic({
+  year,
+  length,
+}: {
+  year: string
+  length: number
+}): JSX.Element {
+  const images = Array.from({ length }, (_, i) => `${year}/${i + 1}.jpg`)
 
   return (
     <ul className="columns-1 md:columns-2 lg:columns-3 gap-4 p-4">
