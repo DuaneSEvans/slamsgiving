@@ -4,7 +4,7 @@ export default function Gallery(): JSX.Element {
     <div className="w-full flex justify-center">
       <div className="flex flex-col w-full items-center gap-16 h-full text-swamp py-12 px-2 md:px-12">
         <div className="flex flex-col gap-6">
-          <h1 className="text-center font-['Chalkboard']">
+          <h1 className="text-center cursive-font">
             Photography by{" "}
             <a
               href="https://www.instagram.com/robinrobinphotography/"
