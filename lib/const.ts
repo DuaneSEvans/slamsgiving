@@ -104,3 +104,6 @@ export const officers: TeamMember[] = [
       "Sadie, our esteemed Officer of the Swamp, is the guardian of all things funky and fun in our beloved bog. With a keen nose for the perfect swamp aroma and an eye for that just right shade of murky green, Sadie ensures our swamp is always in top form. As the official greeter of the mire, she welcomes every guest with the warmth of decomposing vegetation and the charm of a friendly bog creature. Sadie's unique talent lies in maintaining the delicate balance between 'appropriately funky' and 'still habitable,' creating an atmosphere where fun thrives alongside the funk. Under her watchful eye, the swamp remains the beating heart of our Slamsgiving celebration, pulsing with life, laughter, and just the right amount of slime.",
   },
 ]
+
+export const YEARS = ["2023", "2024"] as const
+export type Year = (typeof YEARS)[number]
