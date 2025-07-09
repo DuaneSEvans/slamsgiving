@@ -1,3 +1,5 @@
+"use client"
+
 import { useEffect, useState } from "react"
 import { DateTime, Duration } from "luxon"
 import { SLAMSGIVING_DATE } from "lib/const"
