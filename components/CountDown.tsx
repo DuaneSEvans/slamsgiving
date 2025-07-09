@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react"
 import { DateTime, Duration } from "luxon"
 import { SLAMSGIVING_DATE } from "lib/const"
+import { motion, Variants } from "framer-motion"
 
 function getTimeUntilSlams(): Duration {
   return SLAMSGIVING_DATE.diff(DateTime.now(), [
@@ -15,8 +16,23 @@ function getTimeUntilSlams(): Duration {
   ])
 }
 
+const container: Variants = {
+  hidden: { opacity: 1 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+}
+
+const item: Variants = {
+  hidden: { y: 20, opacity: 0 },
+  show: { y: 0, opacity: 1 },
+}
+
 export function CountDown() {
-  const [timeRemaining, setTimeRemaining] = useState(getTimeUntilSlams())
+  const [timeRemaining, setTimeRemaining] = useState<Duration | null>(null)
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -25,14 +41,42 @@ export function CountDown() {
     return () => clearInterval(interval)
   }, [])
 
+  if (!timeRemaining) {
+    return (
+      <div className="relative flex justify-center items-center">
+        <motion.span
+          initial={{ rotate: 0 }}
+          animate={{ rotate: 360 }}
+          transition={{ duration: 1, repeat: Infinity }}
+          className="absolute text-8xl"
+        >
+          🍳
+        </motion.span>
+      </div>
+    )
+  }
+
+  const timeUnits = [
+    { unit: "months", value: timeRemaining.months },
+    { unit: "days", value: timeRemaining.days },
+    { unit: "hours", value: timeRemaining.hours },
+    { unit: "minutes", value: timeRemaining.minutes },
+    { unit: "seconds", value: timeRemaining.seconds },
+  ]
+
   return (
-    <div className="flex justify-center lg:gap-6 md:gap-4 font-mono">
-      <CountDownBox value={timeRemaining.months} label="months" />
-      <CountDownBox value={timeRemaining.days} label="days" />
-      <CountDownBox value={timeRemaining.hours} label="hours" />
-      <CountDownBox value={timeRemaining.minutes} label="minutes" />
-      <CountDownBox value={timeRemaining.seconds} label="seconds" />
-    </div>
+    <motion.div
+      className="flex justify-center lg:gap-6 md:gap-4 font-mono"
+      variants={container}
+      initial="hidden"
+      animate="show"
+    >
+      {timeUnits.map(({ unit, value }) => (
+        <motion.div key={unit} variants={item}>
+          <CountDownBox value={value} label={unit} />
+        </motion.div>
+      ))}
+    </motion.div>
   )
 }
 
