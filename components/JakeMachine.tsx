@@ -1,6 +1,6 @@
 "use client"
 
-/* eslint-disable @next/next/no-img-element */
+import Image from "next/image"
 import { useState } from "react"
 
 const jakeImageURLs = [
@@ -50,7 +50,13 @@ export function JakeMachine(): JSX.Element {
           Hit me
         </button>
         <div className="overflow-y-clip max-h-[500px] grayscale jake-machine-image-wrapper">
-          <img alt="A funny photo of jake" src={imageURL} width={"100%"} />
+          <Image
+            key={imageURL}
+            alt="A funny photo of jake"
+            src={imageURL}
+            width={1000}
+            height={1000}
+          />
         </div>
       </div>
     </div>

@@ -1,6 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
-
 import { TeamMember } from "lib/const"
+import Image from "next/image"
 
 export default function TeamCards({
   teamMembers,
@@ -17,10 +16,11 @@ export default function TeamCards({
           >
             <div className="relative">
               <div className="max-h-[600px] overflow-y-clip grayscale">
-                <img
+                <Image
                   alt={`Photo of ${teamMember.name}`}
                   src={teamMember.imageUrl}
-                  width={"100%"}
+                  width={1000}
+                  height={1000}
                 />
               </div>
               <div className="absolute -left-4 bottom-14 w-1/3 min-w-fit bg-primary">

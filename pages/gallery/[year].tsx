@@ -1,9 +1,9 @@
 import { YEARS } from "lib/const"
+import Image from "next/image"
 import { useRouter } from "next/router"
 
 type Year = "2024" | "2023"
 
-/* eslint-disable @next/next/no-img-element */
 export default function Gallery(): JSX.Element {
   return (
     <div className="w-full flex justify-center">
@@ -56,7 +56,13 @@ function Mosaic({ year }: { year: Year }): JSX.Element {
     <ul className="columns-1 md:columns-2 lg:columns-3 gap-4 p-4">
       {images.map((src) => (
         <li className="break-inside-avoid" key={src}>
-          <img className="block w-full mb-4" src={src} alt="🍳" />
+          <Image
+            className="block w-full mb-4"
+            src={src}
+            alt="🍳"
+            width={300}
+            height={300}
+          />
         </li>
       ))}
     </ul>
