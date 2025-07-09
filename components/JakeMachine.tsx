@@ -49,9 +49,11 @@ export function JakeMachine(): JSX.Element {
         >
           Hit me
         </button>
-        <div className="overflow-y-clip max-h-[500px] grayscale jake-machine-image-wrapper">
+        <div
+          className="overflow-y-clip max-h-[500px] grayscale jake-machine-image-wrapper"
+          key={imageURL}
+        >
           <Image
-            key={imageURL}
             alt="A funny photo of jake"
             src={imageURL}
             width={1000}
