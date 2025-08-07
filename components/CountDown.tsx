@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import { DateTime, Duration } from "luxon"
 import { SLAMSGIVING_DATE } from "lib/const"
 import { motion, Variants } from "framer-motion"
+import { Loader } from "./Loader"
 
 function getTimeUntilSlams(): Duration {
   return SLAMSGIVING_DATE.diff(DateTime.now(), [
@@ -42,18 +43,7 @@ export function CountDown() {
   }, [])
 
   if (!timeRemaining) {
-    return (
-      <div className="relative flex justify-center items-center">
-        <motion.span
-          initial={{ rotate: 0 }}
-          animate={{ rotate: 360 }}
-          transition={{ duration: 1, repeat: Infinity }}
-          className="absolute text-8xl"
-        >
-          🍳
-        </motion.span>
-      </div>
-    )
+    return <Loader />
   }
 
   const timeUnits = [
