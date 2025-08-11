@@ -14,6 +14,7 @@ enum Roles {
   Begonias = "Begonias",
   Photography = "Photography",
   Swamp = "Swamp",
+  SwampCommodore = "Swamp Commodore",
 }
 export type TeamMember = {
   name: string
@@ -96,6 +97,13 @@ export const boardOfDirectors: TeamMember[] = [
 ]
 
 export const officers: TeamMember[] = [
+  {
+    name: "Cecilia",
+    imageUrl: "/teamMembers/cecilia.jpg",
+    role: Roles.SwampCommodore,
+    description:
+      "As commodore of the swamp and attire, Cecilia is the quartermaster of high spirits and low down dirty duds. She patrols the bog with a needle and thread in one hand and a songbook in the other, ready to patch up a ripped pair of jorts or lead a rousing chorus of 'swamp things.' Her gospel is simple. Look good, feel good, get weird. She's the helpful hand that'll stitch your costume back together and the voice that leads the singalongs by the fire. Cross her, and you might find your zippers mysteriously sewn shut. Obey, and you'll be the best dressed, most spirited swamp creature this side of the quagmire.",
+  },
   {
     name: "Emily",
     imageUrl: "/teamMembers/emily.jpg",
