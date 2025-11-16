@@ -56,10 +56,10 @@ export default function History(): JSX.Element {
               roast turkey dinner for four. This planted the seed for
               Slamsgiving, a portmanteau of “Grand Slam” (Denny’s signature
               breakfast) and “Thanksgiving”. On October 10th, 2020 at 7:45pm, a
-              humble gathering of four friends in the basement of 57 W 17th Ave
-              in Vancouver, BC took place. They ate their Grand Slams, listened
-              to a carefully curated playlist (Songs That Slam), watched Shrek
-              2, played Shrek Super Slam and generally… got Slammed.
+              humble gathering of four friends in Mica's basement in Vancouver,
+              BC took place. They ate their Grand Slams, listened to a carefully
+              curated playlist (Songs That Slam), watched Shrek 2, played Shrek
+              Super Slam and generally… got Slammed.
               <br />
               <br />
               In 2021, a new venue was found to accommodate more friends. In
