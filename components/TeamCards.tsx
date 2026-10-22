@@ -5,7 +5,7 @@ export default function TeamCards({
   teamMembers,
 }: {
   teamMembers: TeamMember[]
-}): JSX.Element {
+}) {
   return (
     <div className="flex justify-around flex-wrap">
       {teamMembers.map((teamMember) => {

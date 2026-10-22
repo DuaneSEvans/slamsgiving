@@ -37,7 +37,7 @@ function choose<T>(arr: ReadonlyArray<T>): T {
   return arr[Math.floor(Math.random() * arr.length)]!
 }
 
-export function JakeMachine(): JSX.Element {
+export function JakeMachine() {
   const [imageURL, setImageURL] = useState(choose(jakeImageURLs))
   return (
     <div className="flex flex-col items-center text-center text-swamp md:py-12 py-6 gap-8">

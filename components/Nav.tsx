@@ -2,7 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import EggDropdown from "./EggDropdown"
 
-export default function Nav(): JSX.Element {
+export default function Nav() {
   return (
     <nav className="bg-primary p-2 justify-between flex z-10">
       <Link href="/" className="p-1">
@@ -13,7 +13,7 @@ export default function Nav(): JSX.Element {
   )
 }
 
-function DesktopNav(): JSX.Element {
+function DesktopNav() {
   return (
     <div className="flex gap-6">
       <NavMenuOptions />
@@ -22,7 +22,7 @@ function DesktopNav(): JSX.Element {
 }
 
 // TODO(dse): make everything a dropdown when on mobile
-function NavMenuOptions(): JSX.Element {
+function NavMenuOptions() {
   return (
     <>
       <EggDropdown>
@@ -42,6 +42,6 @@ function NavMenuOption({
   children,
 }: {
   children: React.ReactNode
-}): JSX.Element {
+}) {
   return <div className="flex items-center mr-1 text-swamp">{children}</div>
 }

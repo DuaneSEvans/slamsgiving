@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-export function TicketButton(): JSX.Element {
+export function TicketButton() {
   return (
     <div className="flex justify-center">
       <Link

@@ -76,7 +76,7 @@ function CountDownBox({
 }: {
   value: number
   label: string
-}): JSX.Element {
+}) {
   return (
     <div className="flex flex-col lg:p-5 p-2">
       <span className="lg:text-8xl md:text-5xl text-3xl">

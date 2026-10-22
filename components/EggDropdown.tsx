@@ -6,7 +6,7 @@ import { YEARS } from "lib/const"
 import Link from "next/link"
 import { useState } from "react"
 
-function EggDropdown({ children }: { children: React.ReactNode }): JSX.Element {
+function EggDropdown({ children }: { children: React.ReactNode }) {
   const [open, setOpen] = useState(false)
 
   return (
@@ -43,7 +43,7 @@ function FriedEggWrapper({
   children,
 }: {
   children: React.ReactNode
-}): JSX.Element {
+}) {
   return (
     <motion.ol
       initial={{ y: -200 }}
@@ -84,7 +84,7 @@ function MenuItem({
 }: {
   children: React.ReactNode
   index: number
-}): JSX.Element {
+}) {
   return (
     <motion.li
       className="rounded-lg backdrop-blur-md bg-white/30 px-2 py-1 hover:scale-105 transition-transform"

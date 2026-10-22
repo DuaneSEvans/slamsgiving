@@ -4,7 +4,7 @@ import { useRouter } from "next/router"
 
 type Year = "2024" | "2023"
 
-export default function Gallery(): JSX.Element {
+export default function Gallery() {
   return (
     <div className="w-full flex justify-center">
       <div className="flex flex-col w-full items-center gap-16 h-full text-swamp py-12 px-2 md:px-12">
@@ -26,7 +26,7 @@ export default function Gallery(): JSX.Element {
   )
 }
 
-function Year(): JSX.Element {
+function Year() {
   const router = useRouter()
   const year = router.query.year
 
@@ -44,7 +44,7 @@ function Year(): JSX.Element {
   )
 }
 
-function Mosaic({ year }: { year: Year }): JSX.Element {
+function Mosaic({ year }: { year: Year }) {
   const numOfPhotosForYear = getNumOfPhotosForYear(year)
 
   const images = Array.from(
