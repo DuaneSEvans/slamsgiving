@@ -1,6 +1,6 @@
 import { DateTime } from "luxon"
 
-export const SLAMSGIVING_DATE = DateTime.fromISO("2026-11-14T23:20:00Z")
+export const SLAMSGIVING_DATE = DateTime.local(2026, 11, 14, 16, 20)
 
 enum Roles {
   Finance = "Finance",
