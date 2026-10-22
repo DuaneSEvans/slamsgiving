@@ -13,11 +13,11 @@
     "incremental": true,
     "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "baseUrl": "./",
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "target": "ES2017"
   },
   "include": [
