@@ -113,5 +113,5 @@ export const officers: TeamMember[] = [
   },
 ]
 
-export const YEARS = ["2023", "2024"] as const
+export const YEARS = ["2025", "2024", "2023"] as const
 export type Year = (typeof YEARS)[number]
